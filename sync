@@ -1,0 +1,8 @@
+- hosts: web_server
+  tasks:
+
+  - name: Test
+    synchronize:
+      src: /root/.jenkins/workspace/Ansible/index.php
+      dest: /var/www/html/php
+    delegate_to: jenkins
