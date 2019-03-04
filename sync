@@ -6,3 +6,6 @@
       src: /root/.jenkins/workspace/Ansible/index.php
       dest: /var/www/html/php
     delegate_to: jenkins
+    
+    mirrors.jenkins.io/war-stable/latest/jenkins.war
+
